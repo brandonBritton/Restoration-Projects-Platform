@@ -1,0 +1,85 @@
+#LOTTLogo, #LOTTLogoBurger {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 12px 15px 12px;
+    padding-top: 5px;
+    justify-content: left;
+    background-color: transparent;
+
+}
+
+.loginButtonNav {
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+
+    background-color: var(--color_green);
+
+    font-family: var(--general_font_family);
+    font-size: var(--general_font_size);
+    font-weight: var(--heading_text_font_weight);
+    color: var(--color_white);
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 5px;
+}
+
+.leftStyle {
+    height: 64px;
+    background-color:var(--foreground_color);
+}
+
+.rightStyle {
+    position: absolute;
+    top: 0px;
+    right:0px;
+    height: 64px;
+    width: auto;
+}
+
+h3.navbarHeaders {
+    font-family: var(--general_font_family);
+    font-size: var(--unit_title_font_size);
+    font-weight: var(--unit_title_font_weight);
+    color: var(--general_text_color);
+    text-align: center;
+    line-height: 32px;
+    padding-top: 20px;
+
+}
+
+h3.navbarHeadersBurger {
+    font-family: var(--general_font_family);
+    font-size: var(--unit_title_font_size);
+    font-weight: var(--unit_title_font_weight);
+    color: var(--general_text_color);
+    text-align: center;
+    line-height: 24px;
+    padding-top: 10px;
+
+}
+
+.burgerList {
+    display: none;
+    height: 64px;
+    background-color:var(--foreground_color);
+}
+
+@media screen and (max-width: 1000px) {
+
+    .leftStyle {
+        display: none;
+
+    }
+
+    .burgerList {
+        display: block;
+    }
+
+}

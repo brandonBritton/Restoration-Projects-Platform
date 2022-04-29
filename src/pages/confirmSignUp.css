@@ -1,0 +1,69 @@
+
+.authCard {
+    width: min(1000px, 90vw) !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.authField {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: calc(100% - 100px);
+    height:40px;
+    border-radius: 8px;
+    display: inline-block;
+    border: 1px solid var(--color_green);
+    box-sizing: border-box;
+    
+    font-family: var(--general_font_family);
+    font-size: var(--general_font_size);
+    color: var(--general_text_color);
+    font-weight: var(--general_text_font_weight);
+    text-align: left;
+    
+}
+
+.authField:hover {
+    border-color: var(--color_forest_green);
+    border-width: 1px !important;
+}
+
+.authButton {
+    margin-left: calc(50% - 300px);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: calc(100% - 400px);
+    height: 50px;
+    border-radius: 8px;
+    position: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 175px;
+    background-color: var(--color_green);
+
+    font-family: var(--general_font_family);
+    font-size: var(--general_font_size);
+    font-weight: var(--heading_text_font_weight);
+    color: var(--color_white);
+}
+
+.authButton:focus {
+    background-color: var(--color_forest_green);
+}
+
+.authLabels {
+    margin-left: 50px;
+}
+
+.errorLabel {
+    text-align: center;
+    position: absolute;
+    color: red;
+    width: 100%;
+    padding-left: 75px;
+}

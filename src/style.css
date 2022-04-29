@@ -1,0 +1,175 @@
+@import url('./fonts/fonts.css');
+
+:root {
+
+    /*  From the guidelines sent to us. */
+    --color_forest_green: #134A2C;
+    --color_deep_black: #1D1D1B;
+    --color_hay_yellow: #EFD200;
+    --color_lime_green: #95C11F;
+    --color_green: #4A7634;
+    --color_white: #FFFFFF;
+    --color_link_blue: #0645AD;
+    --color_deep_red: #8b0000;
+
+    /*  =============================   */
+
+    --card_header_color: var(--color_green);
+    --general_text_color: var(--color_deep_black);
+    --general_link_color: var(--color_link_blue);
+    --text_header_color: var(--color_forest_green);
+    --disclaimer_text_color: var(--color_deep_red);
+    --foreground_color: var(--color_white);
+    --background_color: var(--color_forest_green);
+
+    --input_border_color: var(--color_forest_green);
+    --input_border_hover_color: var(--color_green);
+
+    /* Unfortunately, due to the nature of antd, 
+    we cannot use CSS to change the color of progress 
+    bars on the solutions page, so to change that, view solutions.js */
+
+    --general_font_family: 'Jost';
+
+    --card_header_font_size: 40px;
+    --card_header_font_weight: 700;
+    
+    /* h1 */
+    --heading_text_font_size: 24px;
+    --heading_text_font_weight: 500;
+
+    /* h2 */
+    --section_header_font_size: 20px;
+    --section_header_font_weight: 400;
+
+    /* h3 */
+    --unit_title_font_size: 18px;
+    --unit_title_font_weight: 300;
+
+    /* div className = "generalText" */
+    --general_font_size: 16px;
+    --general_text_font_weight: 300;
+
+    --card_standard_padding: 10px 25px 0px;
+    
+    --icon_image_size: 50px;
+    
+
+}
+
+div.standardText {
+    font-family: var(--general_font_family);
+    font-size: var(--general_font_size);
+    color: var(--general_text_color);
+    font-weight: var(--general_text_font_weight);
+    text-align: left;
+
+}
+
+div.standardTextLink {
+    font-family: var(--general_font_family);
+    font-size: var(--general_font_size);
+    color: var(--general_link_color);
+    font-weight: var(--general_text_font_weight);
+    text-align: left;
+
+}
+
+h1 { /* This used to be cardHeader*/
+    font-family: var(--general_font_family);
+    font-size: var(--card_header_font_size);
+    font-weight: var(--card_header_font_weight);
+    color: var(--card_header_color);
+    text-align: left;
+    line-height: 24px;
+    padding:var(--card_standard_padding);
+    overflow-wrap: break-word;
+}
+
+h2 { /* This used to be headerText*/
+    font-family: var(--general_font_family);
+    font-size: var(--section_header_font_size);
+    font-weight: var(--section_header_font_weight);
+    color: var(--text_header_color);
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+h3 { 
+    font-family: var(--general_font_family);
+    font-size: var(--unit_title_font_size);
+    font-weight: var(--unit_title_font_weight);
+    color: var(--general_text_color);
+    text-align: left;
+    line-height: 32px;
+    overflow-wrap: break-word;
+}
+
+label {
+    display: block;
+    padding-left: 2px;
+    font-family: var(--general_font_family);
+    font-size: var(--unit_title_font_size);
+    font-weight: var(--unit_title_font_weight);
+    text-align: left;
+    color: var(--general_text_color);
+}
+
+.calculatorInput {
+    font-family: var(--general_font_family);
+    font-size: var(--general_font_size);
+    color: var(--general_text_color);
+    font-weight: var(--general_text_font_weight);
+    text-align: left;
+
+}
+
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--background_color);
+
+}
+
+h3.disclaimerText {
+    font-family: var(--general_font_family);
+    font-size: var(--unit_title_font_size);
+    font-weight: var(--unit_title_font_weight);
+    color: var(--disclaimer_text_color);
+    text-align: left;
+    line-height: 32px;
+
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #95C11F #fff;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  
+  
+      
+  *::-webkit-scrollbar-thumb {
+    background-color: #95C11F;
+    border-radius: 20px;
+    border: 3px solid #fff;
+  }
+  
+  img {
+    max-width: 100%;
+  }

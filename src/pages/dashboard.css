@@ -1,0 +1,30 @@
+.CardImage {
+    display: block;
+    max-height: 100%;
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sprayImageHolder {
+    width:80vw;
+}
+
+#sprayImage {
+    width:100%;
+    height:auto;
+
+}
+
+.content {
+    overflow: hidden;
+    height: auto;
+    width: auto;
+    padding-top: 5em;
+}
+
+.centreText {
+    text-align: center;
+    word-wrap: break-word;
+}
